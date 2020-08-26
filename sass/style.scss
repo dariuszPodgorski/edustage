@@ -2,4 +2,8 @@
 @import 'mixins';
 @import 'mediaQueries';
 @import 'reset';
-@import 'nav';
+@import 'header';
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
