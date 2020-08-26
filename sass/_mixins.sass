@@ -1,0 +1,25 @@
+@mixin flexBox($justify,)
+    display: flex
+    justify-content: $justify
+
+@mixin listStyle()
+    text-decoration: none
+
+@mixin bacground($position, $repeat, $size )
+    background-position: $position
+    background-repeat: $repeat
+    background-size: $size
+
+@mixin btn-style($color, $bgc-color,$width, $height)
+    font-weight: 600
+    letter-spacing: 1p
+    text-transform: uppercase
+    color: $color
+    background-color: $bgc-color
+    width: $width
+    height: $height
+    border: 1px solid transparent
+    font-size: 14px
+    border-radius: 5px
+    margin-left: 20px
+    cursor: pointer
