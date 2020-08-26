@@ -143,11 +143,11 @@ table {
   height: 100vh;
 }
 
-.site-header .site-nav_menu {
+.site-nav_menu {
   display: none;
 }
 
-.site-header .site-nav_logo {
+.site-nav_logo {
   padding: 20px 0;
   height: 60%;
   display: -webkit-box;
@@ -163,7 +163,7 @@ table {
   position: relative;
 }
 
-.site-header .nav_respo-trigger {
+.nav_respo-trigger {
   display: block;
   width: 10vw;
   position: absolute;
@@ -173,17 +173,96 @@ table {
   color: #002347;
 }
 
+.site-header_content {
+  text-align: center;
+}
+
+.site-header_content h4 {
+  padding: 120px 0 20px 0;
+  color: #002347;
+  font-weight: 600;
+}
+
+.site-header_content h2 {
+  color: #002347;
+  font-weight: 600;
+}
+
+.site-header_btn {
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 1p;
+  text-transform: uppercase;
+  color: #fdc632;
+  background-color: #002347;
+  width: 120px;
+  height: 48px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.site-header_btn2 {
+  margin-top: 10px;
+  font-weight: 600;
+  letter-spacing: 1p;
+  text-transform: uppercase;
+  color: #002347;
+  background-color: #fdc632;
+  width: 120px;
+  height: 48px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 625px) {
+  .site-header_btn {
+    font-weight: 600;
+    letter-spacing: 1p;
+    text-transform: uppercase;
+    color: #fdc632;
+    background-color: #002347;
+    width: 150px;
+    height: 48px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .site-header_btn2 {
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: 1p;
+    text-transform: uppercase;
+    color: #002347;
+    background-color: #fdc632;
+    width: 150px;
+    height: 48px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .site-header .site-nav_logo {
+  .site-nav_logo {
     height: 100%;
   }
-  .site-header .site-nav_menu {
+  .site-nav_menu {
     display: block;
   }
-  .site-header .nav_respo-trigger {
+  .nav_respo-trigger {
     display: none;
   }
-  .site-header .site-nav {
+  .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -196,7 +275,7 @@ table {
             justify-content: space-between;
     padding: 0 80px;
   }
-  .site-header .site-nav_menu {
+  .site-nav_menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -207,7 +286,7 @@ table {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  .site-header .site-nav_menu-trigger-link {
+  .site-nav_menu-trigger-link {
     text-decoration: none;
     padding: 0 10px;
     font-size: 16px;
@@ -218,10 +297,10 @@ table {
 }
 
 @media screen and (min-width: 1224px) {
-  .site-header .site-nav {
+  .site-nav {
     padding: 0 180px;
   }
-  .site-header .site-nav_menu-trigger-link {
+  .site-nav_menu-trigger-link {
     padding: 0 20px;
     font-size: 18px;
   }
@@ -229,5 +308,50 @@ table {
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+  body h2 {
+    font-size: 35px;
+  }
+  body h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  body h2 {
+    font-size: 43px;
+  }
+  body h4 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body h2 {
+    font-size: 48px;
+  }
+  body h4 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  body h2 {
+    font-size: 52px;
+  }
+  body h4 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1824px) {
+  body h2 {
+    font-size: 58px;
+  }
+  body h4 {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

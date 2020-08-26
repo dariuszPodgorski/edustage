@@ -5,6 +5,11 @@
         }
     }
 
+    @else if $point==small_v2 {
+        @media screen and (min-width: 625px) {
+            @content;
+        }
+    }
 
     @else if $point==medium {
         @media screen and (min-width: 768px) {
