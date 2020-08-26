@@ -1,0 +1,55 @@
+.courses
+    height: 80vh
+    // padding-top: 50px
+    text-align: center
+
+    & h3
+        +h3Style()
+
+    & p
+        +pStyle()
+
+.courses_info
+    margin: 50px 20px
+    +flexBox(row)
+    justify-content: center
+
+.courses_info-content
+    margin: 0 15px
+    width: 25vw
+    +flexBox(column)
+    background-color: $section-color
+
+    & h4
+        padding-top: 25px
+        +h4Style()
+
+    & p
+        +pStyle()
+        text-align: justify
+        padding: 0 10px 0 10px
+
+.coruses_info-content_img
+    position: relative
+
+.courses_info-content_lector
+    +flexBox(row)
+    // justify-content: center
+    padding: 0 10px 0 25px
+    position: relative
+
+    & p
+        color: $color-font
+        font-weight: bold
+
+.courses_btn
+    position: absolute
+    bottom: 20px
+    right: 35px
+    +btn-style(#ffffff, $color-btn-second, 120px, 35px)
+
+.courses_lector-img
+    height: 80%
+
+.price_circle
+    +priceCircle()

@@ -1,6 +1,6 @@
-@mixin flexBox($justify,)
+@mixin flexBox($direction)
     display: flex
-    justify-content: $justify
+    flex-direction: $direction
 
 @mixin listStyle()
     text-decoration: none
@@ -23,3 +23,35 @@
     border-radius: 5px
     margin-left: 20px
     cursor: pointer
+
+@mixin h4Style()
+    font-size: 22px
+    color: #002347
+    font-weight: 600
+    padding-bottom: 15px
+    letter-spacing: 1.25px
+
+@mixin h3Style()
+    font-size: 36px
+    font-weight: bold 600
+    color: #002347
+    text-align: center
+
+@mixin pStyle()
+    color: #7b838a
+    font-style: italic
+
+@mixin priceCircle()
+    width: 60px
+    width: 60px
+    height: 60px
+    border-radius: 50% 50%
+    line-height: 60px
+    font-size: 20px
+    font-weight: bold
+    position: absolute
+    background-color: #002347
+    color: #fdc632
+    bottom: -20px
+    right: 20px
+    letter-spacing: 1.25px

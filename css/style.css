@@ -3,9 +3,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: row;
-      -ms-flex-pack: row;
-          justify-content: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -24,9 +25,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: row;
-      -ms-flex-pack: row;
-          justify-content: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .site-nav_menu-trigger {
@@ -103,7 +105,7 @@
 }
 
 .about {
-  height: 70vh;
+  height: 60vh;
   background-color: #fff;
   text-align: center;
   padding-top: 50px;
@@ -113,6 +115,7 @@
   font-size: 36px;
   font-weight: bold 600;
   color: #002347;
+  text-align: center;
 }
 
 .about p {
@@ -124,20 +127,167 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: row;
-      -ms-flex-pack: row;
-          justify-content: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .about-article {
-  margin: 50px 20px;
-  padding-left: 20px;
-  width: 20vw;
+  margin: 50px 20px 0 20px;
+  width: 25vw;
+  height: 250px;
   text-align: left;
   background-color: #f9f9ff;
+}
+
+.about-article .fas {
+  font-size: 40px;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #002347;
+}
+
+.about-article h4 {
+  font-size: 22px;
+  color: #002347;
+  font-weight: 600;
+  padding-bottom: 15px;
+  letter-spacing: 1.25px;
+  text-align: center;
+}
+
+.about-article p {
+  text-align: justify;
+  padding: 0 25px;
+}
+
+.courses {
+  height: 80vh;
+  text-align: center;
+}
+
+.courses h3 {
+  font-size: 36px;
+  font-weight: bold 600;
+  color: #002347;
+  text-align: center;
+}
+
+.courses p {
+  color: #7b838a;
+  font-style: italic;
+}
+
+.courses_info {
+  margin: 50px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.courses_info-content {
+  margin: 0 15px;
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f9f9ff;
+}
+
+.courses_info-content h4 {
+  padding-top: 25px;
+  font-size: 22px;
+  color: #002347;
+  font-weight: 600;
+  padding-bottom: 15px;
+  letter-spacing: 1.25px;
+}
+
+.courses_info-content p {
+  color: #7b838a;
+  font-style: italic;
+  text-align: justify;
+  padding: 0 10px 0 10px;
+}
+
+.coruses_info-content_img {
+  position: relative;
+}
+
+.courses_info-content_lector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 10px 0 25px;
+  position: relative;
+}
+
+.courses_info-content_lector p {
+  color: #002347;
+  font-weight: bold;
+}
+
+.courses_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+  font-weight: 600;
+  letter-spacing: 1p;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fdc632;
+  width: 120px;
+  height: 35px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.courses_lector-img {
+  height: 80%;
+}
+
+.price_circle {
+  width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50% 50%;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  background-color: #002347;
+  color: #fdc632;
+  bottom: -20px;
+  right: 20px;
+  letter-spacing: 1.25px;
 }
 
 body {
