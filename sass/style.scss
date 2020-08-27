@@ -1,17 +1,35 @@
-@import 'variables';
-@import 'mixins';
-@import 'mediaQueries';
-@import 'reset';
-@import 'header';
+@import "variables";
+@import "mixins";
+@import "mediaQueries";
+@import "reset";
+@import "header";
+@import "main";
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 body {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        color: #7b838a;
+    }
+
     @include breakpoint(small) {
         h2 {
             font-size: 35px;
+        }
+
+        h3 {
+            font-size: 28px;
         }
 
         h4 {
@@ -24,6 +42,10 @@ body {
             font-size: 43px;
         }
 
+        h3 {
+            font-size: 32px;
+        }
+
         h4 {
             font-size: 22px;
         }
@@ -33,10 +55,6 @@ body {
         h2 {
             font-size: 48px;
         }
-
-        h4 {
-            font-size: 26px;
-        }
     }
 
     @include breakpoint(large) {
@@ -44,18 +62,14 @@ body {
             font-size: 52px;
         }
 
-        h4 {
-            font-size: 28px;
+        h3 {
+            font-size: 34px;
         }
     }
 
     @include breakpoint(huge) {
         h2 {
             font-size: 58px;
-        }
-
-        h4 {
-            font-size: 30px;
         }
     }
 }
